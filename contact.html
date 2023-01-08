@@ -5,20 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Me</title>
-  <style>
-    body {
-      background-color: powderblue;
-    }
-
-    hr {
-      border-style: none;
-      border-top-style: dotted;
-      border-color: grey;
-      border-width: 5px;
-      width: 5%;
-      
-    }
-  </style>
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
   <h2>You can Contact me with any of the below contacts:</h2>
@@ -52,8 +39,18 @@
   </strong>
   </p>
   <hr size="3">
+  <!-- Basic form /contact validation with html -->
+  <form action="emailto:abmart80@gmail.com" method="post" enctype="text/plain">
+    <label for="yourName">Your Name:</label>
+    <input type="text" name="yourName"><br>
+    <label for="email">Your Email</label>
+    <input type="email" name="yourEmail"><br>
+    <label for="message">Your Message:</label><br>
+    <textarea name="yourMessage" id="" cols="30" rows="10"></textarea><br>
+    <input type="submit">
+  </form>
   <ul type="none">
-    <strong> Social Medias:<br>
+    <strong> Ge in touch through our Social Medias:<br>
     <br>
     <li><a href="https://twitter.com/MartinsAbmart">My twitter Link</a></li>
     <li><a href="https://www.linkedin.com/in/abmartcodingworld/">My Linkedin Link</a></li>
